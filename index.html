@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Deep Instinct Home Page - UXPin Preview</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" href="data/_img_ios-logo-180x180-4f260175.png">
+    <link rel="icon" type="image/png" href="data/_img_favicon-90cb8314.ico">
+    <link rel="icon" sizes="180x180" href="data/_img_ios-logo-180x180-4f260175.png">
+    <link rel="shortcut icon" href="data/_img_favicon-90cb8314.ico">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    
+
+    <link rel="stylesheet" href="data/collaborate.uxpincdn.com_styles__review-3d8eee19.css">
+    
+
+    
+    <!-- auto-generated on export -->
+    <link rel="stylesheet" href="data/fonts.css">
+
+    
+    
+</head>
+
+
+<body ng-controller="HomeController" class="loading" ng-class="{'loading' : isLoading, 'left-panel-active' : (isVisible && sidebarVisible), 'sitemap-visible' : (sitemapVisible && sidebarVisible), 'panel-visible' : (panelVisible && sidebarVisible), 'specification-visible': (specificationVisible && sidebarVisible), 'adding-comment' : isAddingComment, 'dragging' : dragging, 'no-toolbar' : noToolbar || isParticipant, 'crosshair-cursor' : showCrosshairCursor, 'sidebar-collapsed' : sidebarVisible === false, 'mac': isMac}" ng-keydown="keyDown($event)">
+    
+
+    <div ui-view></div>
+    <div ui-view="commentsFilter"></div>
+    <div ng-class="{'fade-in' : specificationFadeIn}" ui-view="specification"></div>
+    <div ng-class="{'fade-in' : panelFadeIn}" ui-view="comments"></div>
+    <div ng-class="{'fade-in' : sitemapFadeIn}" ui-view="sitemap"></div>
+    <div ui-view="nav"></div>
+    <div ui-view="canvas"></div>
+    <section id="responsive-toolbar" adjust-to-viewport-size>
+        <a class="only-icon-font icon-font-arrow show-main-toolbar" ng-click="showToolbar()" toggle-visibility toggle-flag="!isToolbarVisible()" toggle-width-open="34" toggle-width-closed="0" ng-if="!params.isDocument">
+            Show main toolbar
+            <span class="tooltip bottom-arrow">Show main toolbar</span>
+        </a>
+        <div ui-view="approvalProcess"></div>
+        <pv-breakpoints breakpoints="breakpoints"></pv-breakpoints>
+        <ul ui-view="breadcrumbs" ng-if="breadcrumbsVisible" class="breadcrumbs"></ul>
+        <div ui-view="settings"></div>
+    </section>
+    <div ui-view="overlay"></div>
+    <div class="loader"></div>
+
+
+    <script type="text/javascript">
+    window.ApplicationConfiguration = {
+            project:{"id_project":6515994,"custom_font_css_url":"https://api2.uxpin.com/fonts/custom/css/file?id=655953","custom_fonts_url":"http://api.uxpin/fonts/custom/css/?id=655953","id_collection":1438143,"id_account":655953,"name":"Deep Instinct Home Page","hash":"c50aa21162f704fad195729f4f9b80485a9fe976","type":"W","features":{"live_share":true,"user_testing":true,"password":true,"team_comments":true,"spec_mode":true,"spec_mode_styleguide":true,"comments_assignment":true},"settings":{"guides":{"64685058":[{"orientation":"vertical","x":400.36376953125,"y":-716},{"orientation":"horizontal","x":-1077,"y":56},{"orientation":"horizontal","x":-1077,"y":111},{"orientation":"horizontal","x":-1077,"y":77},{"orientation":"horizontal","x":-1077,"y":77}],"64711638":[],"64711641":[{"orientation":"horizontal","x":-1498,"y":1766.00390625},{"orientation":"horizontal","x":-1498,"y":1766.00390625}],"64711646":[{"orientation":"horizontal","x":-1077,"y":-566.64770507812}],"64718726":[{"orientation":"vertical","x":1374,"y":-1432}],"64719635":[]},"grid":{"enabled":false,"grid_on_top":true,"resp0":{"width":"100%","fixed_width":false,"margin":20,"col_width":63,"col_spacing":20,"cols_count":13}}},"created_at":"2016-12-01T09:53:54Z","updated_at":"2016-12-03T21:48:37Z"},
+            userData:{"is_trial":false,"is_anonymous":true,"is_owner":false},
+            mode: 'export',
+            menuEnabled:true};
+    </script>
+
+    
+        <script type="text/javascript" src="data/collaborate.uxpincdn.com_scripts_engine-8992bd64.js"></script>
+        <script type="text/javascript" src="data/collaborate.uxpincdn.com_scripts_vendors-beff189e.js"></script>
+        <script type="text/javascript" src="data/collaborate.uxpincdn.com_scripts_app-2e6f5eb4.js"></script>
+        
+    
+
+</body>
+
+
+</html>
